@@ -6,7 +6,15 @@ import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-    
+    <main>
+      <nav>
+      </nav>
+
+      <Routes>
+        <Route path="/pages/" element={<PokemonList />} />
+        <Route path="/pokemon/:id" element={<PokemonDetail />} />
+      </Routes>
+    </main>
   );
 
 };
